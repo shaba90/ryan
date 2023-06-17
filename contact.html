@@ -257,8 +257,8 @@
                     <h2 class="section-title__title">Feel free to write us <br> anytime</h2>
                 </div>
                 <div class="contact-page__form-box">
-                    <form action="https://layerdrops.com/oxpinshtml/main-html/assets/inc/sendemail.php" class="contact-page__form contact-form-validated"
-                        novalidate="novalidate">
+                    <form  class="contact-page__form contact-form-validated"
+                        novalidate="novalidate" name="contact" method="POST" data-netlify="true" onSubmit="submit">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="contact-form__input-box">
@@ -284,7 +284,7 @@
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="contact-form__input-box text-message-box">
-                                    <textarea name="message" placeholder="Write a message"></textarea>
+                                    <textarea name="message" placeholder="Write a message" name="message"></textarea>
                                 </div>
                                 <div class="contact-form__btn-box">
                                     <button type="submit" class="thm-btn contact-form__btn">Send a message</button>
